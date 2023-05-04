@@ -1,0 +1,70 @@
+body {
+    background-color: #F1F1F1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.navbar {
+    background-color: #FEFEFE;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.2rem;
+    box-shadow: 0px 10px 20px #ababab29;
+}
+.navbar .item1 {
+    justify-self: start;
+}
+.navbar .item2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: end;
+    align-items: center;
+    grid-column-gap: 2rem;
+}
+.navbar .item2 a {
+    justify-self: center;
+    color: #222;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.navbar h1{
+    margin: 0;
+    font-size: large;
+}
+.opinion {
+    margin-top: 6rem;
+    text-align: center;
+}
+.opinion .header {
+    font-size: 2.8rem;
+}
+.opinion-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    justify-items: center;
+}
+.opinion-cards div {
+    background-color: #FEFEFE;
+    max-width: 26rem;
+    border-radius: 3%;
+    box-shadow: 10px 10px 20px #ababab29;
+}
+.opinion-cards div img {
+    max-width: 30%;
+    border-radius: 50%;
+    margin: 3%;
+}
+.opinion-cards div h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 0;
+}
+.opinion-cards div p {
+    font-size: 1rem;
+    padding: .7rem;
+    margin: 0;
+}
+.cards {
+    background-color: #FEFEFE;
+}
