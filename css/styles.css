@@ -3,6 +3,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+body.dark-mode .navbar {
+    background-color: #222;
+    color: gray;
+}
+body.dark-mode .navbar .item2 a {
+    color: gray;
+}
+body.dark-mode .opinion-cards div {
+    background-color: #222;
+    color: white;
+}
+body.dark-mode .opinion-cards div img {
+    outline: 1px solid white;
+}
 .navbar {
     background-color: #FEFEFE;
     display: grid;
@@ -12,6 +30,8 @@ body {
 }
 .navbar .item1 {
     justify-self: start;
+    margin: .4em;
+    font-size: large;
 }
 .navbar .item2 {
     display: grid;
@@ -26,9 +46,54 @@ body {
     text-decoration: none;
     font-weight: bolder;
 }
-.navbar h1{
-    margin: 0;
-    font-size: large;
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+   /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+   /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 1.55rem;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    transition: .4s;
+    border-radius: 30px;
+    outline: 2px solid gray;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.1em;
+    width: 1.3em;
+    border-radius: 20px;
+    top: 0.18em;
+    left: 0.3em;
+    background-color: black;
+    box-shadow: inset 8px -3px 2px 0px white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: rgb(166, 213, 255);
+}
+input:checked + .slider:before {
+    transform: translateX(1.3em);
+    background-color: #ffef00;
+    box-shadow: none;
 }
 .opinion {
     margin-top: 6rem;
