@@ -11,8 +11,14 @@ body.dark-mode .navbar {
     background-color: #222;
     color: gray;
 }
+body.dark-mode .navbar .item1:hover {
+    color: #fefefe;
+}
 body.dark-mode .navbar .item2 a {
     color: gray;
+}
+body.dark-mode .navbar .item2 a:hover {
+    color: #fefefe;
 }
 body.dark-mode .opinion-cards div {
     background-color: #222;
@@ -32,6 +38,10 @@ body.dark-mode .opinion-cards div img {
     justify-self: start;
     margin: .4em;
     font-size: large;
+    cursor: pointer;
+}
+.navbar .item1:hover {
+    color: gray;
 }
 .navbar .item2 {
     display: grid;
@@ -45,6 +55,9 @@ body.dark-mode .opinion-cards div img {
     color: #222;
     text-decoration: none;
     font-weight: bolder;
+}
+.navbar .item2 a:hover {
+    color: gray;
 }
 /* The switch - the box around the slider */
 .switch {
